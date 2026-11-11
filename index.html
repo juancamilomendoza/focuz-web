@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="FOCUZ es una productora audiovisual en Cali. Comerciales, contenido para redes, videos corporativos, fotografía y cubrimiento de eventos para marcas, empresas y artistas.">
+<meta property="og:title" content="FOCUZ · Productora audiovisual en Cali">
+<meta property="og:description" content="Comerciales, contenido para redes, videos corporativos y fotografía para marcas, empresas y artistas.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23121110'/%3E%3Cpath d='M6 12V6h6M20 6h6v6M26 20v6h-6M12 26H6v-6' stroke='%23d9a960' stroke-width='2.5' fill='none'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"FOCUZ","description":"Productora audiovisual: comerciales, contenido para redes, videos corporativos, fotografía y eventos.","address":{"@type":"PostalAddress","addressLocality":"Cali","addressRegion":"Valle del Cauca","addressCountry":"CO"},"areaServed":["Cali","Jamundí","Palmira","Yumbo","Buenaventura"]}
+</script>
+<!-- Google Analytics: pega aquí el código gtag.js cuando tengas el ID (G-XXXXXXX) -->
+<!--PAGE-START-->
+<title>FOCUZ Productora Audiovisual</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: cinematic single page. Dark set, wide 12-col frame, content as the hero; viewfinder marks and timecode as the only ornament. */
+:root{
+  --set:#121110;        /* stage black, warm */
+  --set-2:#1b1a18;      /* raised surface */
+  --line:#2c2a27;       /* hairlines */
+  --paper:#ecE8e1;      /* main text */
+  --dim:#9d978d;        /* secondary text */
+  --tungsten:#d9a960;   /* 3200K accent */
+  --f-display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --f-body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --s-1:.8125rem; --s0:1rem; --s1:1.25rem; --s2:1.75rem; --s3:clamp(2rem,4.5vw,3.25rem); --s4:clamp(2.6rem,8.2vw,6.6rem);
+  --gutter:max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r:max(16px, env(safe-area-inset-right, 0px));
+  --maxw:1280px;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;background:var(--set)}
+body{margin:0;background:var(--set);color:var(--paper);font-family:var(--f-body);font-size:var(--s0);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--set)}
+a{color:inherit}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:var(--f-display);font-stretch:118%;font-weight:800;line-height:.98;letter-spacing:-.01em;margin:0;text-wrap:balance;text-transform:uppercase}
+p{margin:0}
+:focus-visible{outline:2px solid var(--tungsten);outline-offset:3px}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-left:var(--gutter);padding-right:var(--gutter-r)}
+.mono{font-family:var(--f-mono);font-size:var(--s-1);letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}
+.btn{display:inline-flex;align-items:center;gap:.6em;padding:.95em 1.4em;font:600 .95rem/1 var(--f-body);text-decoration:none;border:1px solid var(--paper);color:var(--paper);background:transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn:hover{background:var(--paper);color:var(--set)}
+.btn.solid{background:var(--tungsten);border-color:var(--tungsten);color:var(--set)}
+.btn.solid:hover{background:var(--paper);border-color:var(--paper)}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--set) 86%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:900 1.35rem/1 var(--f-display);font-stretch:125%;letter-spacing:.04em}
+.logo svg{width:22px;height:22px}
+.nav{display:flex;align-items:center;gap:28px}
+.nav a{text-decoration:none;font-size:.92rem;color:var(--dim);transition:color .2s}
+.nav a:hover{color:var(--paper)}
+.nav .btn{color:var(--set);padding:.7em 1.1em}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--paper);padding:.55em .8em;font:500 .85rem var(--f-mono);letter-spacing:.08em;cursor:pointer}
+@media (max-width:860px){
+  .menu-btn{display:block}
+  .nav{position:absolute;left:0;right:0;top:64px;flex-direction:column;align-items:stretch;gap:0;background:var(--set);border-bottom:1px solid var(--line);padding:8px var(--gutter-r) 20px var(--gutter);display:none}
+  .nav.open{display:flex}
+  .nav a{padding:14px 0;border-bottom:1px solid var(--line);font-size:1.05rem;color:var(--paper)}
+  .nav .btn{margin-top:16px;justify-content:center;border-bottom:none}
+}
+
+/* hero */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero-media{position:absolute;inset:0;background:
+  radial-gradient(60% 70% at 72% 38%, rgba(217,169,96,.20), transparent 70%),
+  radial-gradient(40% 50% at 18% 80%, rgba(120,110,95,.18), transparent 70%),
+  linear-gradient(180deg,#151413 0%,#0d0c0b 100%)}
+.hero-media video{width:100%;height:100%;object-fit:cover;opacity:.55}
+.grain{position:absolute;inset:-50%;pointer-events:none;opacity:.10;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain 1.2s steps(6) infinite}
+@keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-4%,3%)}40%{transform:translate(3%,-5%)}60%{transform:translate(-2%,6%)}80%{transform:translate(5%,2%)}100%{transform:translate(0,0)}}
+.hero .wrap{position:relative;display:grid;gap:36px;padding-block:clamp(56px,11vh,120px) clamp(40px,7vh,72px);min-height:min(78vh,820px);align-content:end}
+.vf{position:absolute;inset:clamp(14px,2.5vw,28px);pointer-events:none}
+.vf i{position:absolute;width:28px;height:28px;border-color:rgba(236,232,225,.55);border-style:solid}
+.vf i:nth-child(1){top:0;left:0;border-width:1.5px 0 0 1.5px}
+.vf i:nth-child(2){top:0;right:0;border-width:1.5px 1.5px 0 0}
+.vf i:nth-child(3){bottom:0;left:0;border-width:0 0 1.5px 1.5px}
+.vf i:nth-child(4){bottom:0;right:0;border-width:0 1.5px 1.5px 0}
+.hud{position:absolute;top:clamp(26px,4vw,44px);left:clamp(30px,4.5vw,52px);right:clamp(30px,4.5vw,52px);display:flex;justify-content:space-between;gap:16px;font-family:var(--f-mono);font-size:.75rem;letter-spacing:.08em;color:rgba(236,232,225,.75)}
+.rec{display:inline-flex;align-items:center;gap:8px}
+.rec::before{content:"";width:8px;height:8px;border-radius:50%;background:#d6493a;animation:blink 1.6s infinite}
+@keyframes blink{50%{opacity:.25}}
+.hero h1{font-size:var(--s4);max-width:14ch}
+.hero h1 em{font-style:normal;color:var(--tungsten)}
+.hero-sub{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:end}
+.hero-sub p{max-width:52ch;color:var(--dim);font-size:var(--s1);line-height:1.45}
+.hero-sub p strong{color:var(--paper);font-weight:500}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+@media (max-width:760px){.hero-sub{grid-template-columns:1fr}.hud .hide-s{display:none}}
+
+/* sectors marquee */
+.sectors{border-bottom:1px solid var(--line);overflow:hidden;padding-block:18px}
+.track{display:flex;gap:44px;width:max-content;animation:slide 48s linear infinite}
+.track span{font:600 1.05rem var(--f-display);font-stretch:110%;text-transform:uppercase;color:var(--dim);white-space:nowrap;display:flex;align-items:center;gap:44px}
+.track span::after{content:"";width:6px;height:6px;border:1px solid var(--tungsten);transform:rotate(45deg)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* sections */
+section{scroll-margin-top:80px}
+.sec{padding-block:clamp(72px,11vw,136px)}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 48px;align-items:end;margin-bottom:clamp(36px,5vw,56px)}
+.sec-head h2{font-size:var(--s3)}
+.sec-head p{color:var(--dim);max-width:48ch;justify-self:end}
+.eyebrow{display:block;margin-bottom:18px}
+@media (max-width:760px){.sec-head{grid-template-columns:1fr}.sec-head p{justify-self:start}}
+
+/* portfolio */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.filters button{font:500 .78rem var(--f-mono);letter-spacing:.08em;text-transform:uppercase;padding:.75em 1.1em;background:none;color:var(--dim);border:1px solid var(--line);cursor:pointer;transition:all .2s}
+.filters button:hover{color:var(--paper);border-color:var(--dim)}
+.filters button[aria-pressed="true"]{background:var(--paper);color:var(--set);border-color:var(--paper)}
+.filters .count{opacity:.6;margin-left:.4em}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,1.6vw,22px)}
+@media (max-width:980px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.grid{grid-template-columns:1fr}}
+.card{display:flex;flex-direction:column;gap:12px;text-align:left;background:none;border:0;padding:0;color:inherit;cursor:pointer;font:inherit;min-width:0}
+.frame{position:relative;aspect-ratio:16/9;max-width:100%;overflow:hidden;background:var(--set-2)}
+.frame img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1),filter .4s}
+.ph{position:absolute;inset:0;display:grid;place-items:center;background:
+  radial-gradient(70% 90% at var(--x,60%) 40%, hsl(var(--h,35) 30% 26% / .9), transparent 70%),
+  linear-gradient(160deg,hsl(var(--h,35) 8% 13%),hsl(var(--h,35) 6% 8%));transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.ph span{font:500 .7rem var(--f-mono);letter-spacing:.12em;color:rgba(236,232,225,.45);text-transform:uppercase}
+.frame .tc{position:absolute;left:12px;bottom:10px;font:500 .7rem var(--f-mono);letter-spacing:.06em;color:rgba(236,232,225,.8)}
+.frame .play{position:absolute;right:12px;bottom:10px;display:flex;align-items:center;gap:6px;font:500 .7rem var(--f-mono);letter-spacing:.08em;color:var(--set);background:var(--paper);padding:5px 9px;opacity:0;transform:translateY(6px);transition:all .3s}
+.card:hover .frame img,.card:hover .ph{transform:scale(1.035)}
+.card:hover .play,.card:focus-visible .play{opacity:1;transform:none}
+.meta{display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+.meta h3{font-size:1.05rem;font-stretch:105%;font-weight:700;line-height:1.15;min-width:0}
+.meta .mono{white-space:nowrap;font-size:.72rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags span{font:500 .68rem var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--dim);border:1px solid var(--line);padding:3px 7px}
+.tags .ex{color:var(--tungsten);border-color:color-mix(in srgb,var(--tungsten) 40%,transparent)}
+
+/* services */
+.services{border-top:1px solid var(--line)}
+.svc{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr) minmax(0,3fr);gap:12px 40px;padding-block:26px;border-bottom:1px solid var(--line);align-items:baseline;transition:background .2s}
+.svc h3{font-size:clamp(1.15rem,2.2vw,1.6rem);font-stretch:112%}
+.svc p{color:var(--dim);min-width:0}
+.svc .mono{text-align:right;font-size:.72rem}
+.svc:hover h3{color:var(--tungsten)}
+@media (max-width:760px){.svc{grid-template-columns:1fr;gap:8px}.svc .mono{text-align:left}}
+
+/* about */
+.about{background:var(--set-2);border-block:1px solid var(--line)}
+.about-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(32px,6vw,96px)}
+.about h2{font-size:var(--s3);margin-bottom:28px}
+.about-copy{display:grid;gap:18px;color:var(--dim);font-size:1.075rem;max-width:62ch}
+.about-copy p:first-child{color:var(--paper);font-size:var(--s1);line-height:1.45}
+.spec{border-top:1px solid var(--line);align-self:start}
+.spec div{display:flex;justify-content:space-between;gap:20px;padding-block:15px;border-bottom:1px solid var(--line)}
+.spec dt{font:500 .74rem var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+.spec dd{margin:0;text-align:right;font-weight:500}
+@media (max-width:860px){.about-grid{grid-template-columns:1fr}}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--line);counter-reset:s}
+.step{padding:28px 28px 36px 0;border-bottom:1px solid var(--line);display:grid;gap:12px;align-content:start;min-width:0}
+.step:not(:nth-child(3n+1)){padding-left:28px;border-left:1px solid var(--line)}
+.step .mono{color:var(--tungsten)}
+.step h3{font-size:1.3rem;font-stretch:110%}
+.step p{color:var(--dim)}
+@media (max-width:860px){.steps{grid-template-columns:1fr}.step,.step:not(:nth-child(3n+1)){padding:24px 0;border-left:0}}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,96px)}
+.contact h2{font-size:var(--s3);margin-bottom:24px}
+.contact-info{display:grid;gap:28px;align-content:start}
+.contact-info > p{color:var(--dim);max-width:44ch}
+.channels{display:grid;border-top:1px solid var(--line)}
+.channels a,.channels div{display:flex;justify-content:space-between;gap:16px;padding-block:14px;border-bottom:1px solid var(--line);text-decoration:none}
+.channels span:last-child{text-align:right;word-break:break-word}
+.channels a:hover span:last-child{color:var(--tungsten)}
+form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.field{display:grid;gap:8px;min-width:0}
+.field.full{grid-column:1/-1}
+label{font:500 .72rem var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+input,select,textarea{width:100%;font:inherit;color:var(--paper);background:transparent;border:0;border-bottom:1px solid var(--line);padding:.6em 0;border-radius:0;transition:border-color .2s}
+select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--dim) 50%),linear-gradient(135deg,var(--dim) 50%,transparent 50%);background-position:calc(100% - 10px) 55%,calc(100% - 5px) 55%;background-size:5px 5px;background-repeat:no-repeat}
+select option{background:var(--set);color:var(--paper)}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--tungsten)}
+.form-foot{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin-top:8px}
+.form-foot small{color:var(--dim);max-width:42ch}
+.notice{grid-column:1/-1;border:1px solid var(--tungsten);padding:16px 18px;color:var(--paper);display:grid;gap:10px}
+.notice a{color:var(--tungsten)}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr}}
+@media (max-width:520px){form{grid-template-columns:1fr}}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding-block:40px calc(40px + env(safe-area-inset-bottom,0px))}
+footer .wrap{display:flex;flex-wrap:wrap;gap:20px 40px;justify-content:space-between;align-items:center}
+.social{display:flex;flex-wrap:wrap;gap:20px}
+.social a{text-decoration:none;color:var(--dim);font-size:.9rem}
+.social a:hover{color:var(--paper)}
+
+/* whatsapp float */
+.wa{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:40;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#0b2b17;box-shadow:0 8px 24px rgba(0,0,0,.35);text-decoration:none;transition:transform .2s}
+.wa:hover{transform:scale(1.06)}
+.wa svg{width:28px;height:28px}
+
+/* modal */
+.modal{position:fixed;inset:0;z-index:80;background:rgba(8,8,7,.94);display:grid;place-items:center;padding:calc(20px + env(safe-area-inset-top,0px)) var(--gutter-r) calc(20px + env(safe-area-inset-bottom,0px)) var(--gutter)}
+.modal-inner{width:min(1100px,100%);display:grid;gap:16px}
+.modal .player{position:relative;aspect-ratio:16/9;max-width:100%;background:#000;display:grid;place-items:center;text-align:center;padding:20px}
+.modal .player.vertical{aspect-ratio:9/16;max-height:72vh;margin-inline:auto;width:auto;height:72vh}
+.modal iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.modal-bar{display:flex;justify-content:space-between;gap:16px;align-items:start}
+.modal-bar h3{font-size:var(--s2)}
+.modal-close{background:none;border:1px solid var(--line);color:var(--paper);font:500 .75rem var(--f-mono);letter-spacing:.08em;padding:.7em 1em;cursor:pointer}
+.modal p.mono{color:var(--dim)}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="FOCUZ, inicio">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 11V4h7M21 4h7v7M28 21v7h-7M11 28H4v-7" stroke="#d9a960" stroke-width="2.6" fill="none"/></svg>
+      FOCUZ
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">MENÚ</button>
+    <nav class="nav" id="nav">
+      <a href="#trabajo">Trabajo</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn solid" href="#contacto">Cotizar proyecto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-media" id="heroMedia"><div class="grain"></div></div>
+  <div class="vf" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="hud" aria-hidden="true">
+    <span class="rec">REC <span id="tc">00:00:00:00</span></span>
+    <span class="hide-s">4K UHD · 24 FPS · 2.39:1</span>
+    <span>CALI, CO</span>
+  </div>
+  <div class="wrap">
+    <h1>Imagen que <em>vende</em> tu marca.</h1>
+    <div class="hero-sub">
+      <p><strong>FOCUZ es una productora audiovisual en Cali.</strong> Hacemos comerciales, contenido para redes, videos corporativos y fotografía para empresas, marcas y artistas en Cali, Jamundí, Palmira, Yumbo y Buenaventura.</p>
+      <div class="cta-row">
+        <a class="btn solid" href="#trabajo">Ver portafolio</a>
+        <a class="btn" href="#contacto">Solicitar cotización</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sectors" aria-label="Sectores con los que trabajamos">
+  <div class="track" id="track"></div>
+</div>
+
+<section class="sec" id="trabajo">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="mono eyebrow">Portafolio</span><h2>Trabajo seleccionado</h2></div>
+      <p>Una selección de producciones para marcas, empresas, eventos y artistas. Elige una categoría o abre un proyecto para verlo completo.</p>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filtrar por categoría"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section class="sec" id="servicios" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="mono eyebrow">Servicios</span><h2>Qué producimos</h2></div>
+      <p>Cada producción se cotiza según alcance, jornadas, equipo, locaciones, talento y entregables. Cuéntanos tu proyecto y te enviamos una propuesta.</p>
+    </div>
+    <div class="services" id="services"></div>
+  </div>
+</section>
+
+<section class="sec about" id="nosotros">
+  <div class="wrap about-grid">
+    <div>
+      <span class="mono eyebrow">Nosotros</span>
+      <h2>Una productora joven con oficio de cine</h2>
+      <div class="about-copy">
+        <p>Somos un equipo de dirección, producción y postproducción que trabaja con empresas, marcas, artistas e instituciones del Valle del Cauca.</p>
+        <p>Nos ocupamos del proyecto completo: la idea, el guion, el rodaje y la entrega final en los formatos que necesita cada canal, desde un comercial horizontal hasta una serie de reels verticales para cada mes.</p>
+        <p>Trabajamos con cámaras de cine en 4K, iluminación profesional y una postproducción cuidada en color y sonido, para que tu marca se vea igual de bien en una pantalla grande que en un celular.</p>
+      </div>
+    </div>
+    <dl class="spec" aria-label="Capacidades">
+      <div><dt>Formato de captura</dt><dd>4K UHD</dd></div>
+      <div><dt>Entregas</dt><dd>16:9 · 9:16 · 1:1 · 4:5</dd></div>
+      <div><dt>Equipo</dt><dd>Dirección, cámara, luz, sonido, edición</dd></div>
+      <div><dt>Postproducción</dt><dd>Edición, color, sonido, motion</dd></div>
+      <div><dt>Cobertura</dt><dd>Cali y municipios cercanos</dd></div>
+      <div><dt>Modalidad</dt><dd>Proyecto único o contenido mensual</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="sec" id="proceso">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="mono eyebrow">Cómo trabajamos</span><h2>Del brief a la entrega</h2></div>
+      <p>Un proceso claro en seis pasos, con aprobaciones en cada etapa para que sepas siempre en qué va tu proyecto.</p>
+    </div>
+    <div class="steps" id="steps"></div>
+  </div>
+</section>
+
+<section class="sec contact" id="contacto" style="padding-top:0">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <div>
+        <span class="mono eyebrow">Contacto</span>
+        <h2>Hablemos de tu proyecto</h2>
+        <p style="color:var(--dim);max-width:44ch">Cuéntanos qué necesitas y te respondemos con una propuesta. Si prefieres, agenda una reunión y lo conversamos.</p>
+      </div>
+      <div class="channels" id="channels"></div>
+    </div>
+    <form id="quote" novalidate>
+      <div class="field"><label for="f-name">Nombre</label><input id="f-name" name="nombre" autocomplete="name" required placeholder="Tu nombre"></div>
+      <div class="field"><label for="f-company">Empresa o marca</label><input id="f-company" name="empresa" autocomplete="organization" placeholder="Nombre de la empresa"></div>
+      <div class="field"><label for="f-phone">Teléfono / WhatsApp</label><input id="f-phone" name="telefono" type="tel" autocomplete="tel" placeholder="+57 300 000 0000"></div>
+      <div class="field"><label for="f-email">Correo</label><input id="f-email" name="correo" type="email" autocomplete="email" placeholder="nombre@empresa.com"></div>
+      <div class="field"><label for="f-type">Qué necesitas</label><select id="f-type" name="servicio"></select></div>
+      <div class="field"><label for="f-goal">Tipo de solicitud</label>
+        <select id="f-goal" name="solicitud"><option>Cotización</option><option>Reunión</option><option>Contenido mensual</option><option>Otra consulta</option></select></div>
+      <div class="field"><label for="f-budget">Presupuesto aproximado</label>
+        <select id="f-budget" name="presupuesto"><option>Aún no lo sé</option><option>Menos de $2.000.000</option><option>$2.000.000 – $5.000.000</option><option>$5.000.000 – $15.000.000</option><option>Más de $15.000.000</option></select></div>
+      <div class="field"><label for="f-date">Fecha estimada</label><input id="f-date" name="fecha" placeholder="Ej. primera semana de diciembre"></div>
+      <div class="field full"><label for="f-msg">Cuéntanos del proyecto</label><textarea id="f-msg" name="mensaje" required placeholder="Qué quieres comunicar, dónde se publicará, referencias que te gusten…"></textarea></div>
+      <div class="form-foot">
+        <small>Al enviar se abrirá WhatsApp con tu mensaje listo. Respondemos en horario laboral.</small>
+        <button class="btn solid" type="submit">Enviar solicitud</button>
+      </div>
+      <div class="notice" id="notice" hidden></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="logo" style="font-size:1.1rem">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 11V4h7M21 4h7v7M28 21v7h-7M11 28H4v-7" stroke="#d9a960" stroke-width="2.6" fill="none"/></svg>FOCUZ</span>
+    <nav class="social" id="social" aria-label="Redes sociales"></nav>
+    <span class="mono">© <span id="year"></span> FOCUZ · Cali, Colombia</span>
+  </div>
+</footer>
+
+<a class="wa" id="waFloat" href="#contacto" aria-label="Escríbenos por WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+</a>
+
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="modal-inner">
+    <div class="modal-bar">
+      <div><p class="mono" id="mMeta"></p><h3 id="mTitle"></h3></div>
+      <button class="modal-close" id="mClose">CERRAR ✕</button>
+    </div>
+    <div class="player" id="mPlayer"></div>
+    <p id="mDesc" style="color:var(--dim);max-width:70ch"></p>
+  </div>
+</div>
+
+<script>
+/* =====================================================================
+   CONFIGURACIÓN DE FOCUZ — edita solo esta parte para actualizar datos
+   ===================================================================== */
+const CONFIG = {
+  whatsapp: "",               // número con indicativo, sin + ni espacios. Ej: "573001234567"
+  telefonoVisible: "Pendiente", // como quieres que se vea. Ej: "+57 300 123 4567"
+  email: "Pendiente",        // Ej: "hola@focuz.co"
+  ciudad: "Cali, Valle del Cauca",
+  heroVideo: "",              // ruta a un clip corto en MP4 (10–20 s, sin audio). Ej: "assets/videos/reel-hero.mp4"
+  redes: {
+    Instagram: "",            // Ej: "https://instagram.com/focuz"
+    TikTok: "",
+    LinkedIn: "",
+    YouTube: "",
+    "Google": ""              // enlace al perfil de Google Business
+  }
+};
+
+/* PORTAFOLIO
+   Cada proyecto: título, cliente, categoría (comercial | entretenimiento | corporativo | eventos),
+   etiquetas, año, youtube (el ID o enlace del video), vertical (true si es reel 9:16),
+   foto (ruta a la miniatura, ej. "assets/fotos/proyecto.jpg") y descripción.
+   Los proyectos marcados con ejemplo:true son de muestra y se reemplazan con los reales. */
+const PROYECTOS = [
+  {titulo:"Lanzamiento de temporada", cliente:"Restaurante", categoria:"comercial", etiquetas:["Gastronomía"], anio:2026, ejemplo:true, h:28,
+   descripcion:"Comercial de 30 segundos y piezas verticales para redes del lanzamiento de una nueva carta."},
+  {titulo:"Noche de apertura", cliente:"Discoteca", categoria:"eventos", etiquetas:["Nightlife"], anio:2026, ejemplo:true, h:350, vertical:true,
+   descripcion:"Cubrimiento audiovisual del evento y aftermovie en formato vertical."},
+  {titulo:"Avance de obra", cliente:"Constructora", categoria:"corporativo", etiquetas:["Construcción"], anio:2026, ejemplo:true, h:200,
+   descripcion:"Seguimiento mensual del avance de obra con drone y tomas en tierra."},
+  {titulo:"Video musical", cliente:"Artista", categoria:"entretenimiento", etiquetas:["Música"], anio:2026, ejemplo:true, h:280,
+   descripcion:"Dirección, producción y postproducción de un video musical."},
+  {titulo:"Testimonios de pacientes", cliente:"Clínica estética", categoria:"comercial", etiquetas:["Salud"], anio:2026, ejemplo:true, h:15,
+   descripcion:"Serie de testimonios y contenido de marca personal para especialistas."},
+  {titulo:"Recorrido de proyecto", cliente:"Inmobiliaria", categoria:"comercial", etiquetas:["Inmobiliario"], anio:2026, ejemplo:true, h:40,
+   descripcion:"Video y fotografía de un apartamento modelo para lanzamiento comercial."},
+  {titulo:"Video institucional", cliente:"Empresa", categoria:"corporativo", etiquetas:["Institucional"], anio:2026, ejemplo:true, h:210,
+   descripcion:"Video institucional para presentaciones comerciales y sitio web."},
+  {titulo:"Experiencia glamping", cliente:"Hospitalidad", categoria:"comercial", etiquetas:["Turismo"], anio:2026, ejemplo:true, h:120,
+   descripcion:"Pieza de marca y fotografía para promocionar la experiencia de hospedaje."},
+  {titulo:"Campaña de entrenadores", cliente:"Gimnasio", categoria:"comercial", etiquetas:["Deportes"], anio:2026, ejemplo:true, h:0, vertical:true,
+   descripcion:"Contenido mensual de clases y entrenadores para redes sociales."},
+  {titulo:"Test drive", cliente:"Concesionario", categoria:"comercial", etiquetas:["Automotor"], anio:2026, ejemplo:true, h:220,
+   descripcion:"Lanzamiento de un modelo nuevo con tomas en carretera y piezas para pauta."},
+  {titulo:"Celebración de fin de año", cliente:"Empresa", categoria:"eventos", etiquetas:["Corporativo"], anio:2026, ejemplo:true, h:330,
+   descripcion:"Cubrimiento del evento interno y resumen para comunicaciones."},
+  {titulo:"Sesión en vivo", cliente:"Artista", categoria:"entretenimiento", etiquetas:["Música"], anio:2026, ejemplo:true, h:300,
+   descripcion:"Grabación multicámara de una sesión en vivo."}
+];
+
+const SERVICIOS = [
+  ["Comerciales y campañas", "Ideas, guion y producción de piezas publicitarias para televisión, digital y pauta.", "Comercial"],
+  ["Contenido mensual para redes", "Un plan de contenido recurrente: grabamos una vez y entregamos piezas para todo el mes.", "Recurrente"],
+  ["Reels y contenido vertical", "Videos 9:16 pensados para Instagram, TikTok y YouTube Shorts.", "9:16"],
+  ["Videos corporativos e institucionales", "Presentaciones de empresa, capacitaciones, campañas internas y videos de cultura.", "Corporativo"],
+  ["Fotografía comercial", "Producto, espacios, retratos de equipo y fotografía de campaña.", "Foto"],
+  ["Cubrimiento de eventos", "Lanzamientos, celebraciones, conciertos y eventos corporativos con entrega rápida.", "Eventos"],
+  ["Artistas y entretenimiento", "Videos musicales, sesiones en vivo, visualizers y contenido para lanzamientos.", "Música"],
+  ["Videos de producto y lanzamientos", "Piezas que muestran tu producto con detalle para web, catálogo y pauta.", "Producto"],
+  ["Testimoniales y casos de éxito", "Clientes reales contando su experiencia, con dirección y una edición cuidada.", "Confianza"],
+  ["Dirección, producción y posproducción", "Nos sumamos a tu proyecto en la etapa que necesites: rodaje, edición, color o sonido.", "Servicio técnico"]
+];
+
+const PASOS = [
+  ["Brief y reunión", "Conversamos sobre tu marca, el objetivo del video, dónde se publicará y las fechas."],
+  ["Propuesta y cotización", "Te enviamos una propuesta con alcance, entregables, cronograma y valor."],
+  ["Preproducción", "Guion, referencias visuales, locaciones, talento y plan de rodaje aprobados contigo."],
+  ["Rodaje", "Grabamos con equipo profesional y un director a cargo de cada toma."],
+  ["Postproducción", "Edición, color, sonido y gráficos. Recibes una versión para comentarios."],
+  ["Entrega", "Entregamos los archivos finales en los formatos de cada red y plataforma."]
+];
+
+const SECTORES = ["Restaurantes","Discotecas y bares","Clínicas estéticas","Odontología","Constructoras","Inmobiliarias","Hoteles y glampings","Gimnasios","Automotor","Empresas","Artistas y managers","Agencias"];
+
+const CATEGORIAS = {todo:"Todo", comercial:"Comercial", entretenimiento:"Entretenimiento", corporativo:"Corporativo", eventos:"Eventos"};
+
+/* ===================== fin de la configuración ===================== */
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const ytId = v => { if(!v) return ""; const m = String(v).match(/(?:v=|youtu\.be\/|shorts\/|embed\/)([\w-]{11})/); return m ? m[1] : String(v).trim(); };
+const waLink = text => CONFIG.whatsapp ? `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(text)}` : "";
+
+/* hero video */
+if (CONFIG.heroVideo) {
+  const v = document.createElement("video");
+  Object.assign(v, {src: CONFIG.heroVideo, autoplay: true, muted: true, loop: true, playsInline: true});
+  v.setAttribute("playsinline", ""); v.setAttribute("aria-hidden", "true");
+  $("#heroMedia").prepend(v);
+}
+
+/* timecode */
+(() => {
+  const el = $("#tc"); const t0 = performance.now();
+  const p = n => String(n).padStart(2, "0");
+  const tick = () => {
+    const ms = performance.now() - t0, s = Math.floor(ms / 1000);
+    el.textContent = `${p(Math.floor(s/3600))}:${p(Math.floor(s/60)%60)}:${p(s%60)}:${p(Math.floor((ms%1000)/1000*24))}`;
+    requestAnimationFrame(tick);
+  };
+  if (!matchMedia("(prefers-reduced-motion: reduce)").matches) tick();
+})();
+
+/* sectors */
+$("#track").innerHTML = [...SECTORES, ...SECTORES].map(s => `<span>${esc(s)}</span>`).join("");
+
+/* portfolio */
+let filtro = "todo";
+function renderFilters(){
+  $("#filters").innerHTML = Object.entries(CATEGORIAS).map(([k, label]) => {
+    const n = k === "todo" ? PROYECTOS.length : PROYECTOS.filter(p => p.categoria === k).length;
+    return `<button type="button" data-k="${k}" aria-pressed="${k===filtro}">${label}<span class="count">${n}</span></button>`;
+  }).join("");
+}
+function renderGrid(){
+  const list = PROYECTOS.map((p, i) => ({...p, i})).filter(p => filtro === "todo" || p.categoria === filtro);
+  $("#grid").innerHTML = list.map((p, n) => {
+    const thumb = p.foto ? `<img src="${esc(p.foto)}" alt="" loading="lazy">`
+      : `<div class="ph" style="--h:${p.h ?? 35};--x:${30 + (p.i*23)%50}%"><span>Fotograma pendiente</span></div>`;
+    const tags = [...(p.etiquetas||[]), ...(p.ejemplo ? [] : [])].map(t => `<span>${esc(t)}</span>`).join("")
+      + (p.ejemplo ? `<span class="ex">Ejemplo</span>` : "");
+    return `<button class="card" type="button" data-i="${p.i}" aria-label="Ver ${esc(p.titulo)}">
+      <div class="frame">${thumb}
+        <span class="tc">${String(n+1).padStart(2,"0")} · ${p.vertical ? "9:16" : "16:9"}</span>
+        <span class="play">▶ VER</span>
+      </div>
+      <div class="meta"><h3>${esc(p.titulo)}</h3><span class="mono">${esc(p.cliente)} · ${esc(p.anio)}</span></div>
+      <div class="tags"><span>${esc(CATEGORIAS[p.categoria] || p.categoria)}</span>${tags}</div>
+    </button>`;
+  }).join("");
+}
+$("#filters").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  filtro = b.dataset.k; renderFilters(); renderGrid();
+});
+$("#grid").addEventListener("click", e => {
+  const c = e.target.closest(".card"); if (c) openProject(PROYECTOS[+c.dataset.i]);
+});
+renderFilters(); renderGrid();
+
+/* modal */
+let lastFocus = null;
+function openProject(p){
+  lastFocus = document.activeElement;
+  $("#mTitle").textContent = p.titulo;
+  $("#mMeta").textContent = `${CATEGORIAS[p.categoria] || ""} · ${p.cliente} · ${p.anio}`;
+  $("#mDesc").textContent = p.descripcion || "";
+  const pl = $("#mPlayer"); pl.classList.toggle("vertical", !!p.vertical);
+  const id = ytId(p.youtube);
+  pl.innerHTML = id
+    ? `<iframe src="https://www.youtube-nocookie.com/embed/${esc(id)}?autoplay=1&rel=0&modestbranding=1&playsinline=1" title="${esc(p.titulo)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`
+    : p.foto ? `<img src="${esc(p.foto)}" alt="${esc(p.titulo)}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">`
+    : `<p class="mono">El video de este proyecto se mostrará aquí cuando se agregue su enlace.</p>`;
+  $("#modal").hidden = false; document.body.style.overflow = "hidden"; $("#mClose").focus();
+}
+function closeModal(){
+  $("#modal").hidden = true; $("#mPlayer").innerHTML = ""; document.body.style.overflow = "";
+  lastFocus?.focus();
+}
+$("#mClose").addEventListener("click", closeModal);
+$("#modal").addEventListener("click", e => { if (e.target.id === "modal") closeModal(); });
+addEventListener("keydown", e => { if (e.key === "Escape" && !$("#modal").hidden) closeModal(); });
+
+/* services, steps */
+$("#services").innerHTML = SERVICIOS.map(([t, d, k]) => `<div class="svc"><h3>${esc(t)}</h3><p>${esc(d)}</p><span class="mono">${esc(k)}</span></div>`).join("");
+$("#steps").innerHTML = PASOS.map(([t, d], i) => `<div class="step"><span class="mono">Paso ${i+1} de ${PASOS.length}</span><h3>${esc(t)}</h3><p>${esc(d)}</p></div>`).join("");
+$("#f-type").innerHTML = SERVICIOS.map(([t]) => `<option>${esc(t)}</option>`).join("") + `<option>Otro</option>`;
+
+/* contact channels + social */
+const saludo = "Hola FOCUZ, quiero información sobre un proyecto audiovisual.";
+$("#channels").innerHTML = [
+  CONFIG.whatsapp ? `<a href="${waLink(saludo)}" target="_blank" rel="noopener"><span class="mono">WhatsApp</span><span>${esc(CONFIG.telefonoVisible)}</span></a>`
+                  : `<div><span class="mono">WhatsApp</span><span>${esc(CONFIG.telefonoVisible)}</span></div>`,
+  `<div><span class="mono">Correo</span><span>${esc(CONFIG.email)}</span></div>`,
+  `<div><span class="mono">Ciudad</span><span>${esc(CONFIG.ciudad)}</span></div>`
+].join("");
+$("#social").innerHTML = Object.entries(CONFIG.redes).map(([n, u]) => u
+  ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(n)}</a>`
+  : `<a aria-disabled="true" title="Enlace pendiente" style="opacity:.45">${esc(n)}</a>`).join("");
+const wf = $("#waFloat");
+if (CONFIG.whatsapp) wf.href = waLink(saludo); else { wf.removeAttribute("target"); }
+$("#year").textContent = new Date().getFullYear();
+
+/* form → WhatsApp */
+$("#quote").addEventListener("submit", e => {
+  e.preventDefault();
+  const f = e.target, d = Object.fromEntries(new FormData(f)), n = $("#notice");
+  if (!d.nombre.trim() || !d.mensaje.trim()) {
+    n.hidden = false; n.innerHTML = "Escribe tu nombre y una descripción del proyecto para poder enviarlo.";
+    (d.nombre.trim() ? $("#f-msg") : $("#f-name")).focus(); return;
+  }
+  const text = [
+    "Hola FOCUZ, quiero solicitar: " + d.solicitud,
+    "Nombre: " + d.nombre, d.empresa && "Empresa: " + d.empresa, d.telefono && "Teléfono: " + d.telefono,
+    d.correo && "Correo: " + d.correo, "Servicio: " + d.servicio, "Presupuesto: " + d.presupuesto,
+    d.fecha && "Fecha: " + d.fecha, "", d.mensaje
+  ].filter(x => x !== undefined && x !== false && x !== null && x !== "" || x === "").join("\n");
+  const link = waLink(text);
+  n.hidden = false;
+  n.innerHTML = link
+    ? `Tu mensaje está listo. <a href="${link}" target="_blank" rel="noopener">Abrir WhatsApp para enviarlo →</a>`
+    : `Tu mensaje está listo, pero falta configurar el número de WhatsApp de FOCUZ en la página.`;
+  if (link) window.open(link, "_blank", "noopener");
+});
+
+/* mobile menu */
+const mb = $("#menuBtn"), nav = $("#nav");
+mb.addEventListener("click", () => { const o = nav.classList.toggle("open"); mb.setAttribute("aria-expanded", o); mb.textContent = o ? "CERRAR" : "MENÚ"; });
+nav.addEventListener("click", e => { if (e.target.tagName === "A") { nav.classList.remove("open"); mb.setAttribute("aria-expanded", false); mb.textContent = "MENÚ"; } });
+</script>
+<!--PAGE-END-->
+</body>
+</html>
